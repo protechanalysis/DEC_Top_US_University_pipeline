@@ -1,10 +1,11 @@
-import logging
-import pandas as pd
 import json
+import logging
 
 import awswrangler as wr
-from function.session import aws_session
-from function.config import output_unirank, output_score_card
+import pandas as pd
+
+from scripts.config import output_score_card, output_unirank
+from scripts.session import aws_session
 
 logging.basicConfig(format="%(asctime)s %(message)s")
 

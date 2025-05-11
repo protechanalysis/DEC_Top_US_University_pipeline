@@ -1,8 +1,9 @@
 import logging
 
 from airflow.providers.snowflake.hooks.snowflake import SnowflakeHook
-from function.config import (access_key, secret_key, snowflake_table,
-                             s3_bucket, parquet_path)
+
+from scripts.config import (access_key, parquet_path, s3_bucket, secret_key,
+                            snowflake_table)
 
 logging.basicConfig(format="%(asctime)s %(message)s")
 

@@ -3,7 +3,6 @@ from airflow.models import Variable
 unirank_url = "https://www.4icu.org/us/"
 scorecard_url = "https://api.data.gov/ed/collegescorecard/v1/schools"
 
-# API Key
 api_key = Variable.get("api_key")
 access_key = Variable.get("access_key")
 secret_key = Variable.get("secret_key")
@@ -71,7 +70,7 @@ column_mapping = {
     "latest.school.institutional_characteristics.level":
     "institutional_characteristics_level",
     "latest.school.open_admissions_policy": "open_admissions_policy",
-    "latest.degrees_awarded.highest": "degrees_awarded_highest",
+    "latest.school.degrees_awarded.highest": "degrees_awarded_highest",
     "latest.school.degrees_awarded.predominant": "degrees_awarded_predominant",
     "latest.cost.booksupply": "booksupply_cost",
     "latest.admissions.test_requirements": "test_requirements",

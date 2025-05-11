@@ -1,4 +1,4 @@
-name: ci_cd team commit
+name: ci team commit
 
 on:
   push:

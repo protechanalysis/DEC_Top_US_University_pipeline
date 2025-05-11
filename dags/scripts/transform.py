@@ -1,10 +1,12 @@
 import logging
+
 import awswrangler as wr
 import pandas as pd
-from rapidfuzz import process, fuzz
-from function.session import aws_session
-from function.config import column_mapping
-from function.columns import columns_with_nulls, columns_to_int
+from rapidfuzz import fuzz, process
+
+from scripts.columns import columns_to_int, columns_with_nulls
+from scripts.config import column_mapping
+from scripts.session import aws_session
 
 logging.basicConfig(format="%(asctime)s %(message)s")
 

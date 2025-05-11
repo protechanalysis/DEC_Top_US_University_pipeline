@@ -1,6 +1,6 @@
 import boto3
 
-from dags.function.config import access_key, secret_key
+from scripts.config import access_key, secret_key
 
 
 def aws_session():

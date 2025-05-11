@@ -1,12 +1,10 @@
-{{ config( materialized="view" ) }}
-
 WITH Us_state as (
     SELECT * 
-    FROM {{ source('uni_ranking', 'STATE_FIDS') }}
+    FROM {{ source('uni_ranking', 'state_fids') }}
 ),
 code_state as (
     select DISTINCT state_fips, state_code
-    from {{ ref('top_1000') }}
+    from {{ ref('stg_school_data') }}
 ),
 combine as (
     select state_fips_id, state, state_code

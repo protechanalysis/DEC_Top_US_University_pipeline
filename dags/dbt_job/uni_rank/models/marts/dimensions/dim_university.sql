@@ -1,0 +1,5 @@
+SELECT ID, SCHOOL_NAME, ADDRESS,
+    CITY, SCHOOL_URL,
+    SCHOOL_ACCREDITOR, PRICE_CALCULATOR_URL
+from 
+    {{ ref('stg_school_data') }}

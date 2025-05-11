@@ -1,14 +1,14 @@
 import json
 import logging
 import time
-# import os
 
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
 from fake_useragent import UserAgent
-from function.config import (scorecard_url, unirank_url, params,
-                             output_unirank, output_score_card)
+
+from scripts.config import (output_score_card, output_unirank, params,
+                            scorecard_url, unirank_url)
 
 logging.basicConfig(level=logging.INFO)
 
